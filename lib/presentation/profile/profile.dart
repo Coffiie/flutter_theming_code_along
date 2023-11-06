@@ -11,22 +11,34 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: const SizedBox.shrink(),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 16.0),
-            child: CustomIcon(
-              onTap: () {
-                //set theme
-              },
-              icon: Icons.close,
-            ),
-          ),
-        ],
-      ),
       body: Column(
         children: [
+          const SizedBox(
+            height: kToolbarHeight,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 16.0),
+                child: CustomIcon(
+                  onTap: () {
+                    // change theme
+                  },
+                  icon: Icons.light_mode,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(right: 16.0),
+                child: CustomIcon(
+                  onTap: () {
+                    //set theme
+                  },
+                  icon: Icons.close,
+                ),
+              ),
+            ],
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
