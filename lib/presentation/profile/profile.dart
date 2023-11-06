@@ -32,7 +32,7 @@ class Profile extends StatelessWidget {
                 padding: const EdgeInsets.only(right: 16.0),
                 child: CustomIcon(
                   onTap: () {
-                    //set theme
+                    //close app
                   },
                   icon: Icons.close,
                 ),
